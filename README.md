@@ -34,3 +34,17 @@ Sistem, fiziksel dünyadaki veriyi dijital işleme tabi tutmak için şu aşamal
 ### 💡 Gelecek Vizyonu (Scalability)
 
 Bu proje, endüstriyel 'AGV' (Otonom Yönlendirmeli Araçlar) ve 'İHA'ların kullandığı engel sakınma sistemlerinin temel mantığını simüle etmektedir.
+
+
+### 🎥 Proje Demo Videosu
+
+
+
+
+
+https://github.com/user-attachments/assets/6e77fc9e-064b-4cb0-93d3-faa3d56c5034
+
+
+
+Ali Arda Kocabörek Akdeniz University | EEE Student# Led-Animation-With-Arrays
+
