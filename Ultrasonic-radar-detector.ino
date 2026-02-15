@@ -1,4 +1,4 @@
-//Smart Night Ambiance Project
+//Ultrasonic Radar Detector Project
 //Ali Arda Kocabörek | Akdeniz EEE
 //Bu kodda henuz arduinoda yeni oldugumdan dolayi AI destegi kullanilmistir ancak mantik ve algoritma kismi bana aittir.
 
