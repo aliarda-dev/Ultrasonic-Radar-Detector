@@ -44,3 +44,9 @@ Bu proje, ultrasonik sensör ve servo motor kullanarak çevreyi açısal olarak 
 
 🎥 Proje Demo Videosu
 Sistemin çalışma videosunu aşağıdan izleyebilirsiniz.
+
+
+
+https://github.com/user-attachments/assets/c4946b27-bd35-4965-9a21-fd1a79edb70e
+
+
