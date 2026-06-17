@@ -1,50 +1,46 @@
-# 📡 Otonom Ultrasonik Radar ve Çevresel Tarama Sistemi
+📡 Ultrasonic Radar Scanner
 
-Bu proje **Akdeniz Üniversitesi Elektrik-Elektronik Mühendisliği** bünyesindeki gömülü sistemler çalışmalarıma temel teşkil eden, robotik navigasyon ve temassız algılama teknolojilerinin bir prototipidir. Çalışma kapsamında, ultrasonik ses dalgaları kullanılarak çevresel bir haritalama yapılmış ve otonom bir engel algılama algoritması geliştirilmiştir.
+Bu proje, ultrasonik sensör ve servo motor kullanarak çevreyi açısal olarak tarayan basit bir radar sistemidir. Sistem, farklı açılarda mesafe ölçerek engellerin konumunu tespit eder.
 
----
+🛠️ Donanım
 
-### 🛠️ Sistem Mimarisi ve Donanım Bileşenleri
+* Arduino Uno
+* HC-SR04 Ultrasonik Sensör
+* SG90 Servo Motor (0–180°)
+* Buzzer
 
-* **Mikrokontrolcü:** Arduino Uno 
-* **Mesafe Algılama:** HC-SR04 Ultrasonik Sensör 
-* **Açısal Kontrol:** SG90 Mikro Servo Motor (180° tarama kapasiteli)
-* **İkaz Birimi:** Aktif Buzzer 
+⚙️ Nasıl Çalışır?
 
----
+* Ultrasonik sensör trig pini ile tetiklenir (10µs sinyal)
 
-### ⚙️ Teknik Çalışma Prensibi
+* Echo süresi `pulseIn()` ile ölçülür
 
-Sistem, fiziksel dünyadaki veriyi dijital işleme tabi tutmak için şu aşamaları izler:
+* Ölçülen süre mesafeye dönüştürülür
 
-1.  **Sinyal Tetikleme (Triggering):** `Trig` pini üzerinden iletilen 10µs'lik kare dalga sinyali ile sensörün akustik dalga yayması sağlanır.
-2.  **Veri Toplama (Echo Acquisition):** Engele çarpıp dönen dalganın süresi `pulseIn()` fonksiyonu ile mikrosaniye hassasiyetinde sayısallaştırılır.
-3.  **Dinamik Tarama:** Servo motor `for` döngüsü aracılığıyla 0-180 derece arasında lineer hareket ederken, her açısal adımda gerçek zamanlı mesafe analizi gerçekleştirilir.
+* Servo motor 0–180° arasında hareket eder
 
----
+* Her açıda mesafe ölçümü yapılır
 
-### 📖 Mühendislik Kazanımları ve Analiz
+* Belirli bir mesafe altına düşüldüğünde buzzer ile uyarı verilir
 
-* Gömülü Yazılım Mimarisi: C programlama dilinde döngüsel kontrol ve fonksiyonel programlama pratikleri.
-* Analog-Dijital Etkileşim: Fiziksel bir büyüklüğün (mesafe) sensör aracılığıyla lojik verilere dönüştürülmesi ve işlenmesi.
-* Hata Yönetimi (Debugging): Seri haberleşme (Serial Monitor) üzerinden veri analizi yaparak sistemdeki donanımsal veya yazılımsal darboğazların giderilmesi.
+📖 Teknik Notlar
 
----
+* Tarama işlemi for döngüsü ile gerçekleştirilmiştir
+* Ölçümler açı bazlı olarak alınır (basit radar mantığı)
+* Sistem gerçek zamanlı veri üretir ancak kayıt tutmaz
 
-### 💡 Gelecek Vizyonu (Scalability)
+⚠️ Limitasyonlar
 
-Bu proje, endüstriyel 'AGV' (Otonom Yönlendirmeli Araçlar) ve 'İHA'ların kullandığı engel sakınma sistemlerinin temel mantığını simüle etmektedir.
+* Ölçüm hassasiyeti sensör kalitesine bağlıdır
+* Gürültü ve yüzey yapısı sonuçları etkileyebilir
+* Gerçek haritalama yapılmaz (sadece anlık ölçüm)
 
+💡 Geliştirme Fikirleri
 
-### 🎥 Proje Demo Videosu
+* Ölçüm verilerini diziye kaydedip haritalama yapmak
+* LCD / grafik arayüz ile radar ekranı oluşturmak
+* Daha hassas sensör kullanımı
+* Çoklu sensör ile kör noktaları azaltmak
 
-
-
-
-
-https://github.com/user-attachments/assets/6e77fc9e-064b-4cb0-93d3-faa3d56c5034
-
-
-
-Ali Arda Kocabörek Akdeniz University | EEE Student# Ultrasonic-Radar-Detector Project
-
+🎥 Proje Demo Videosu
+Sistemin çalışma videosunu aşağıdan izleyebilirsiniz.
