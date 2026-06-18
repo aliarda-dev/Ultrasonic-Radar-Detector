@@ -43,6 +43,7 @@ Bu proje, ultrasonik sensör ve servo motor kullanarak çevreyi açısal olarak 
 * Çoklu sensör ile kör noktaları azaltmak
 
 🎥 Proje Demo Videosu
+
 Sistemin çalışma videosunu aşağıdan izleyebilirsiniz.
 
 
