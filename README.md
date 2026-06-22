@@ -33,11 +33,9 @@ Bu proje, ultrasonik sensör ve servo motor kullanarak çevreyi açısal olarak 
 
 * Ölçüm hassasiyeti sensör kalitesine bağlıdır
 * Gürültü ve yüzey yapısı sonuçları etkileyebilir
-* Gerçek haritalama yapılmaz (sadece anlık ölçüm)
 
 💡 Geliştirme Fikirleri
 
-* Ölçüm verilerini diziye kaydedip haritalama yapmak
 * LCD / grafik arayüz ile radar ekranı oluşturmak
 * Daha hassas sensör kullanımı
 * Çoklu sensör ile kör noktaları azaltmak
