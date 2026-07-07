@@ -1,17 +1,17 @@
-📡 Ultrasonic Radar Scanner
+***Ultrasonic Radar Dedektor***
 
 Bu proje, ultrasonik sensör ve servo motor kullanarak çevreyi açısal olarak tarayan basit bir radar sistemidir. Sistem, farklı açılarda mesafe ölçerek engellerin konumunu tespit eder.
 
-🛠️ Donanım
+***Donanım***
 
 * Arduino Uno
 * HC-SR04 Ultrasonik Sensör
 * SG90 Servo Motor (0–180°)
 * Buzzer
 
-⚙️ Nasıl Çalışır?
+***Nasıl Çalışır?***
 
-* Ultrasonik sensör trig pini ile tetiklenir (10µs sinyal)
+* Ultrasonik sensör trig pini ile tetiklenir 
 
 * Echo süresi `pulseIn()` ile ölçülür
 
@@ -23,18 +23,12 @@ Bu proje, ultrasonik sensör ve servo motor kullanarak çevreyi açısal olarak 
 
 * Belirli bir mesafe altına düşüldüğünde buzzer ile uyarı verilir
 
-📖 Teknik Notlar
+***Teknik Notlar***
 
 * Tarama işlemi for döngüsü ile gerçekleştirilmiştir
-* Ölçümler açı bazlı olarak alınır (basit radar mantığı)
-* Sistem gerçek zamanlı veri üretir ancak kayıt tutmaz
+* Sistem veri üretir ancak kayıt tutmaz
 
-⚠️ Limitasyonlar
-
-* Ölçüm hassasiyeti sensör kalitesine bağlıdır
-* Gürültü ve yüzey yapısı sonuçları etkileyebilir
-
-💡 Geliştirme Fikirleri
+***Geliştirme Fikirleri***
 
 * LCD / grafik arayüz ile radar ekranı oluşturmak
 * Daha hassas sensör kullanımı
